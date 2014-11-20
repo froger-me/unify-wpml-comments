@@ -1,4 +1,4 @@
-wpml-comment-merging
+wpml-comment-merging-new-gen
 ====================
 This plugin merges comments from all translations of the posts and pages, so that they all are displayed on each other. 
 Comments are internally still attached to the post or page they were made on. 
