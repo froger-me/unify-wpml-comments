@@ -149,14 +149,14 @@ class WPML_Unify_Comments {
 		$rating    = wp_cache_get( 'wp_uc_rating_' . $cache_key, 'wp_uc' );
 
 		if ( false === $rating ) {
-			$ratings = $wpdb->get_var( esc_sql( "
+			$ratings = $wpdb->get_var( "
 				SELECT SUM(meta_value) FROM $wpdb->commentmeta
 				LEFT JOIN $wpdb->comments ON $wpdb->commentmeta.comment_id = $wpdb->comments.comment_ID
 				WHERE meta_key = 'rating'
-				AND comment_post_ID IN (" . $ids_in . ")
+				AND comment_post_ID IN (" . esc_sql( $ids_in ) . ")
 				AND comment_approved = '1'
 				AND meta_value > 0
-			" ) );
+			" );
 			$rating  = number_format( $ratings / $count, 2, '.', '' );
 
 			wp_cache_set( 'wp_uc_rating_' . $cache_key, 'wp_uc', $rating );
