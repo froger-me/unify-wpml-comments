@@ -1,4 +1,4 @@
-=== WPML Unify Comments ===
+=== Unify WPML Comments ===
 Contributors: frogerme
 Tags: comments, reviews, multilingual, WMPL, Woocommerce
 Requires at least: 4.9.5
@@ -8,7 +8,7 @@ Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-WPML Unify Comments displays all the comments of a given post for all active languages.
+Unify WPML Comments displays all the comments of a given post for all active languages.
 
 == Description ==
 
@@ -19,7 +19,7 @@ It is compatible with Woocommerce product reviews - it re-calculates the product
 
 This section describes how to install the plugin and get it working.
 
-1. Upload the plugin files to the `/wp-content/plugins/wpml-unify-comments` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/unify-wpml-comments` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
 3. Voilà!
 

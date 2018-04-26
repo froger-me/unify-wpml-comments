@@ -4,7 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-class WPML_Unify_Comments {
+class Unify_WPML_Comments {
 
 	public function __construct() {
 		global $sitepress;
@@ -136,7 +136,7 @@ class WPML_Unify_Comments {
 	* Private methods
 	*******************************************************************/
 
-	private function _calculate_global_average_rating( $count, $ids ) {
+	private function _calculate_global_average_rating( $count, $ids ) {// @codingStandardsIgnoreLine
 		global $wpdb;
 
 		$ids_in = array_map( function( $id ) {
