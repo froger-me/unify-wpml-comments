@@ -6,4 +6,4 @@ This plugin merges comments lists for all the languages. When active, each post 
 It is compatible with Woocommerce product reviews - it re-calculates the product rating average taking into account the reviews for all languages.
 
 ### Installation
-Upload the plugin files to the `/wp-content/plugins/unify-wpml-comments` directory of your Wordpress installation.
+Upload the plugin files to the `/wp-content/plugins/unify-wpml-comments` directory of your WordPress installation.
