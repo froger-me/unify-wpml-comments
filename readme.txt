@@ -1,6 +1,6 @@
 === Unify WPML Comments ===
 Contributors: frogerme
-Tags: comments, reviews, multilingual, WMPL, Woocommerce
+Tags: comments, reviews, multilingual, WMPL, WooCommerce
 Requires at least: 4.9.5
 Tested up to: 4.9.5
 Stable tag: trunk
@@ -13,7 +13,7 @@ Unify WPML Comments displays all the comments of a given post for all active lan
 == Description ==
 
 This plugin merges comments lists for all the languages. When active, each post displays all the related comments, including Custom Post types.  
-It is compatible with Woocommerce product reviews - it re-calculates the product rating average taking into account the reviews for all languages.
+It is compatible with WooCommerce product reviews - it re-calculates the product rating average taking into account the reviews for all languages.
 
 == Installation ==
 

@@ -3,7 +3,7 @@
 Plugin Name: Unify WMPL Comments
 Plugin URI: https://github.com/froger-me/unify-wpml-comments
 Description: Display all the comments on posts (including custom ones), no matter the language.
-compatible with Woocommerce product reviews.
+compatible with WooCommerce product reviews.
 Version: 1.0
 Author: Alexandre Froger
 Author URI: https://froger.me/
