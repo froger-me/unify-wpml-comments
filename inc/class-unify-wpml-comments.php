@@ -62,7 +62,12 @@ class Unify_WPML_Comments {
 	}
 
 	public function merge_comment_count( $count, $post ) {
+		$main_post_id = $post;
 		global $post;
+		
+		if (!$main_post_id) {
+			$main_post_id = $post->ID;	
+		}
 
 		$lang      = defined( 'ICL_LANGUAGE_CODE' ) ? ICL_LANGUAGE_CODE : get_bloginfo( 'language' );
 		$languages = apply_filters( 'wpml_active_languages', array(), array(
@@ -72,7 +77,7 @@ class Unify_WPML_Comments {
 		foreach ( $languages as $l ) {
 
 			if ( $l['code'] !== $lang ) {
-				$main_post = get_post( $post );
+				$main_post = get_post( $main_post_id );
 				$other_id  = apply_filters( 'wpml_object_id', $main_post->ID, $main_post->post_type, false, $l['code'] );
 
 				if ( $other_id ) {
